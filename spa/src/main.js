@@ -3,12 +3,10 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-import BootstrapVue from 'bootstrap-vue'
+import 'bootstrap'
 import './sass/vendors/sbadmin/sb-admin-2.scss'
 import './sass/custom/style.scss'
 import '../node_modules/@fortawesome/fontawesome-free/css/all.css'
-
-Vue.use(BootstrapVue)
 
 Vue.config.productionTip = false
 
