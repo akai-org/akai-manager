@@ -29,11 +29,11 @@
             Projekty
         </div>
 
-        <!-- Nav Item - Charts -->
+        <!-- Nav Item - Project index -->
         <li class="nav-item" :class="{active: routeIs('Projects')}">
             <router-link :to="{ name: 'Projects' }" class="nav-link">
-                <i class="fas fa-fw fa-chart-area"></i>
-                <span>Charts</span>
+                <i class="fas fa-fw fa-project-diagram"></i>
+                <span>Projekty</span>
             </router-link>
         </li>
 
@@ -45,11 +45,43 @@
             Członkowie
         </div>
 
-        <!-- Nav Item - Charts -->
+        <!-- Nav Item - Member index -->
         <li class="nav-item" :class="{active: routeIs('Members')}">
             <router-link :to="{ name: 'Members' }" class="nav-link">
-                <i class="fas fa-fw fa-chart-area"></i>
-                <span>Charts</span>
+                <i class="fas fa-fw fa-users"></i>
+                <span>Członkowie</span>
+            </router-link>
+        </li>
+
+        <!-- Nav Item - Meetings -->
+        <li class="nav-item" :class="{active: routeIs('Meetings')}">
+            <router-link :to="{ name: 'Meetings' }" class="nav-link">
+                <i class="fas fa-fw fa-comments"></i>
+                <span>Spotkania</span>
+            </router-link>
+        </li>
+
+        <!-- Divider -->
+        <hr class="sidebar-divider">
+
+        <!-- Heading -->
+        <div class="sidebar-heading">
+            Promocja
+        </div>
+
+        <!-- Nav Item - Member index -->
+        <li class="nav-item" :class="{active: routeIs('Companies')}">
+            <router-link :to="{ name: 'Companies' }" class="nav-link">
+                <i class="fas fa-fw fa-building"></i>
+                <span>Firmy</span>
+            </router-link>
+        </li>
+
+        <!-- Nav Item - Member index -->
+        <li class="nav-item" :class="{active: routeIs('Events')}">
+            <router-link :to="{ name: 'Events' }" class="nav-link">
+                <i class="fas fa-fw fa-calendar"></i>
+                <span>Wydarzenia</span>
             </router-link>
         </li>
 

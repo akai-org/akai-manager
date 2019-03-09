@@ -2,39 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3cdef328-492d-4439-9f33-7655b37a6742" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/spa/src/assets/img/logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spa/src/components/includes/FooterComponent.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spa/src/components/includes/LogoutModalComponent.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spa/src/components/includes/SidebarComponent.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spa/src/components/includes/TopbarComponent.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spa/src/components/sites/Dashboard.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spa/src/components/sites/Members.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spa/src/components/sites/Projects.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spa/src/sass/custom/_template_fix.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spa/src/sass/custom/_variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spa/src/components/sites/Companies.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spa/src/components/sites/Events.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spa/src/components/sites/Meetings.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spa/build/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spa/build/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/spa/build/utils.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spa/config/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/spa/config/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spa/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/spa/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spa/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/spa/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spa/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/spa/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spa/src/assets/img/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spa/src/assets/img/undraw_posting_photo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spa/src/components/FooterComponent.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spa/src/components/HelloWorld.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spa/src/components/InsideComponent.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spa/src/components/NavbarComponent.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spa/src/components/SidebarComponent.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spa/src/libs/vendors/demo/chart-area-demo.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spa/src/libs/vendors/demo/chart-bar-demo.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spa/src/libs/vendors/demo/chart-pie-demo.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spa/src/libs/vendors/demo/datatables-demo.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spa/src/libs/vendors/sb-admin-2.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spa/src/libs/vendors/sb-admin-2.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spa/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/spa/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spa/src/components/includes/FooterComponent.vue" beforeDir="false" afterPath="$PROJECT_DIR$/spa/src/components/includes/FooterComponent.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spa/src/components/includes/SidebarComponent.vue" beforeDir="false" afterPath="$PROJECT_DIR$/spa/src/components/includes/SidebarComponent.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spa/src/components/sites/Dashboard.vue" beforeDir="false" afterPath="$PROJECT_DIR$/spa/src/components/sites/Dashboard.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spa/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/spa/src/router/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spa/src/sass/custom/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/spa/src/sass/custom/style.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -57,46 +32,46 @@
         <counts>
           <entry key="env" value="1" />
           <entry key="html" value="10" />
-          <entry key="js" value="26" />
+          <entry key="js" value="28" />
           <entry key="md" value="4" />
           <entry key="php" value="1" />
           <entry key="png" value="1" />
           <entry key="scss" value="7" />
           <entry key="svg" value="2" />
-          <entry key="vue" value="34" />
+          <entry key="vue" value="42" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="HTML" value="10" />
           <entry key="Image" value="1" />
-          <entry key="JavaScript" value="26" />
+          <entry key="JavaScript" value="28" />
           <entry key="Markdown" value="4" />
           <entry key="PHP" value="1" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="SCSS" value="7" />
           <entry key="SVG" value="2" />
-          <entry key="Vue.js" value="34" />
+          <entry key="Vue.js" value="42" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="8" />
           <entry key="html" value="98" />
-          <entry key="js" value="948" />
+          <entry key="js" value="1035" />
           <entry key="md" value="924" />
           <entry key="scss" value="123" />
-          <entry key="vue" value="2422" />
+          <entry key="vue" value="2673" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="98" />
-          <entry key="JavaScript" value="948" />
+          <entry key="JavaScript" value="1035" />
           <entry key="Markdown" value="924" />
           <entry key="PLAIN_TEXT" value="8" />
           <entry key="SCSS" value="123" />
-          <entry key="Vue.js" value="2422" />
+          <entry key="Vue.js" value="2673" />
         </counts>
       </usages-collector>
     </session>
@@ -106,8 +81,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spa/src/router/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="8" lean-forward="true" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
+            <state relative-caret-position="615">
+              <caret line="41" column="27" selection-start-line="41" selection-start-column="21" selection-end-line="41" selection-end-column="27" />
               <folding>
                 <element signature="e#0#21#0" expanded="true" />
               </folding>
@@ -115,38 +90,23 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spa/src/components/includes/FooterComponent.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="16" lean-forward="true" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/spa/src/components/includes/SidebarComponent.vue">
+        <entry file="file://$PROJECT_DIR$/spa/src/App.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="48" selection-start-line="17" selection-start-column="48" selection-end-line="17" selection-end-column="48" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spa/src/components/sites/Members.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spa/src/components/sites/Projects.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spa/src/components/sites/Dashboard.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
+            <state relative-caret-position="390">
+              <caret line="26" column="11" lean-forward="true" selection-start-line="26" selection-start-column="11" selection-end-line="26" selection-end-column="11" />
+              <folding>
+                <element signature="e#763#834#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -211,15 +171,19 @@
         <option value="$PROJECT_DIR$/spa/build/utils.js" />
         <option value="$PROJECT_DIR$/spa/src/sass/custom/style.scss" />
         <option value="$PROJECT_DIR$/spa/src/sass/custom/_template_fix.scss" />
-        <option value="$PROJECT_DIR$/spa/src/App.vue" />
         <option value="$PROJECT_DIR$/spa/src/components/LogoutModalComponent.vue" />
         <option value="$PROJECT_DIR$/spa/src/components/TopbarComponent.vue" />
         <option value="$PROJECT_DIR$/spa/src/components/SidebarComponent.vue" />
         <option value="$PROJECT_DIR$/spa/src/components/sites/Projects.vue" />
-        <option value="$PROJECT_DIR$/spa/src/components/sites/Dashboard.vue" />
         <option value="$PROJECT_DIR$/spa/src/router/Members.vue" />
-        <option value="$PROJECT_DIR$/spa/src/router/index.js" />
+        <option value="$PROJECT_DIR$/spa/src/components/sites/Dashboard.vue" />
+        <option value="$PROJECT_DIR$/spa/src/components/sites/Meetings.vue" />
         <option value="$PROJECT_DIR$/spa/src/components/includes/SidebarComponent.vue" />
+        <option value="$PROJECT_DIR$/spa/src/components/sites/Companies.vue" />
+        <option value="$PROJECT_DIR$/spa/src/components/sites/Events.vue" />
+        <option value="$PROJECT_DIR$/spa/src/router/index.js" />
+        <option value="$PROJECT_DIR$/spa/src/components/includes/FooterComponent.vue" />
+        <option value="$PROJECT_DIR$/spa/src/App.vue" />
       </list>
     </option>
   </component>
@@ -457,19 +421,19 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1552081355582</updated>
-      <workItem from="1552081356657" duration="16486000" />
+      <workItem from="1552081356657" duration="18632000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16486000" />
+    <option name="totallyTimeSpent" value="18632000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="960" y="-29" width="960" height="1109" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.42529348" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.42450765" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
@@ -640,16 +604,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spa/src/components/includes/FooterComponent.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-          <folding>
-            <element signature="e#251#257#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../ui-templates/startbootstrap-sb-admin-2-gh-pages/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="439">
@@ -735,16 +689,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spa/src/App.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="810">
-          <caret line="54" selection-start-line="24" selection-start-column="8" selection-end-line="54" />
-          <folding>
-            <element signature="e#846#907#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spa/src/components/HelloWorld.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -752,7 +696,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spa/src/components/sites/Dashboard.vue">
+    <entry file="file://$PROJECT_DIR$/spa/src/components/sites/Members.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
@@ -766,7 +710,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spa/src/components/sites/Members.vue">
+    <entry file="file://$PROJECT_DIR$/spa/src/components/sites/Dashboard.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="8" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spa/src/components/sites/Meetings.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="8" lean-forward="true" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spa/src/components/includes/SidebarComponent.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="82" column="47" selection-start-line="82" selection-start-column="47" selection-end-line="82" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spa/src/components/sites/Events.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spa/src/components/sites/Companies.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
@@ -775,18 +747,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/spa/src/router/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="8" lean-forward="true" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
+        <state relative-caret-position="615">
+          <caret line="41" column="27" selection-start-line="41" selection-start-column="21" selection-end-line="41" selection-end-column="27" />
           <folding>
             <element signature="e#0#21#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spa/src/components/includes/SidebarComponent.vue">
+    <entry file="file://$PROJECT_DIR$/spa/src/components/includes/FooterComponent.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="48" selection-start-line="17" selection-start-column="48" selection-end-line="17" selection-end-column="48" />
+        <state relative-caret-position="15">
+          <caret line="1" column="16" lean-forward="true" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spa/src/App.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="11" lean-forward="true" selection-start-line="26" selection-start-column="11" selection-end-line="26" selection-end-column="11" />
+          <folding>
+            <element signature="e#763#834#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
