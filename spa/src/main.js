@@ -3,11 +3,12 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import axios from 'axios'
 import 'bootstrap'
 import './sass/vendors/sbadmin/sb-admin-2.scss'
 import './sass/custom/style.scss'
 import '../node_modules/@fortawesome/fontawesome-free/css/all.css'
-
+window.axios = axios;
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
