@@ -11,4 +11,4 @@
 |
 */
 
-$router->get('/', 'DashboardController');
+$router->post('/auth', 'Auth\LoginController@login');

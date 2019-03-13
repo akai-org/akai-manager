@@ -4,19 +4,35 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import axios from 'axios'
+import cookieHelper from './libs/cookieHelper'
 import 'bootstrap'
 import './sass/vendors/sbadmin/sb-admin-2.scss'
 import './sass/custom/style.scss'
 import '../node_modules/@fortawesome/fontawesome-free/css/all.css'
-window.axios = axios;
-Vue.config.productionTip = false
 
-/* eslint-disable no-new */
-new Vue({
-  el: '#app',
-  router,
-  components: {
-    App
-  },
-  template: '<App/>'
-})
+window.axios = axios;
+Vue.config.productionTip = false;
+
+import DashboardLayout from './components/layouts/DashboardLayout';
+import LoginLayout from './components/layouts/LoginLayout';
+
+Vue.component("dashboard-layout", DashboardLayout);
+Vue.component("login-layout", LoginLayout);
+
+window.vm = new Vue({
+    el: '#app',
+    router,
+    components: {
+        App
+    },
+    template: '<App ref="app"/>',
+});
+
+window.onSignIn = function (googleUser) {
+    window.googleUser = googleUser;
+    cookieHelper.setCookie("loggedIn", true, 1);
+    vm.$refs.app.setGoogleUser(googleUser);
+    if(vm.$router.currentRoute.meta.layout !== "dashboard"){
+        vm.$router.push("/");
+    }
+};

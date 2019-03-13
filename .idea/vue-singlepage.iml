@@ -10,6 +10,9 @@
       <excludeFolder url="file://$MODULE_DIR$/api/vendor/dragonmantank/cron-expression" />
       <excludeFolder url="file://$MODULE_DIR$/api/vendor/egulias/email-validator" />
       <excludeFolder url="file://$MODULE_DIR$/api/vendor/fzaninotto/faker" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/guzzlehttp/guzzle" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/guzzlehttp/promises" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/guzzlehttp/psr7" />
       <excludeFolder url="file://$MODULE_DIR$/api/vendor/hamcrest/hamcrest-php" />
       <excludeFolder url="file://$MODULE_DIR$/api/vendor/illuminate/auth" />
       <excludeFolder url="file://$MODULE_DIR$/api/vendor/illuminate/broadcasting" />
@@ -35,6 +38,8 @@
       <excludeFolder url="file://$MODULE_DIR$/api/vendor/illuminate/validation" />
       <excludeFolder url="file://$MODULE_DIR$/api/vendor/illuminate/view" />
       <excludeFolder url="file://$MODULE_DIR$/api/vendor/laravel/lumen-framework" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/laravel/socialite" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/league/oauth1-client" />
       <excludeFolder url="file://$MODULE_DIR$/api/vendor/mockery/mockery" />
       <excludeFolder url="file://$MODULE_DIR$/api/vendor/monolog/monolog" />
       <excludeFolder url="file://$MODULE_DIR$/api/vendor/myclabs/deep-copy" />
@@ -55,8 +60,10 @@
       <excludeFolder url="file://$MODULE_DIR$/api/vendor/phpunit/php-token-stream" />
       <excludeFolder url="file://$MODULE_DIR$/api/vendor/phpunit/phpunit" />
       <excludeFolder url="file://$MODULE_DIR$/api/vendor/psr/container" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/psr/http-message" />
       <excludeFolder url="file://$MODULE_DIR$/api/vendor/psr/log" />
       <excludeFolder url="file://$MODULE_DIR$/api/vendor/psr/simple-cache" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/ralouphie/getallheaders" />
       <excludeFolder url="file://$MODULE_DIR$/api/vendor/sebastian/code-unit-reverse-lookup" />
       <excludeFolder url="file://$MODULE_DIR$/api/vendor/sebastian/comparator" />
       <excludeFolder url="file://$MODULE_DIR$/api/vendor/sebastian/diff" />
