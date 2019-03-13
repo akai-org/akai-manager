@@ -2,16 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3cdef328-492d-4439-9f33-7655b37a6742" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/api/apidoc.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/app/Http/Controllers/CompanyController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/app/Http/Controllers/EventController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/app/Http/Controllers/MemberController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/app/Http/Controllers/ProjectController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/app/Libs/Helpers/Meeting/MeetingDestroyer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/app/Libs/Helpers/Meeting/MeetingIndexer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/app/Libs/Helpers/Meeting/MeetingShower.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/app/Libs/Helpers/Meeting/MeetingStorer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/app/Libs/Helpers/Meeting/MeetingUpdater.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/app/Libs/Indexer/Indexer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/app/Libs/Shower/Shower.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/app/Libs/Storer/Storer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/app/Libs/Updater/Updater.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/app/Http/Controllers/Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/app/Http/Controllers/Controller.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/app/Http/Controllers/MeetingController.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/app/Http/Controllers/MeetingController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/api/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -80,7 +81,7 @@
     <session id="1289493488">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="6" />
+          <entry key="project.closed" value="7" />
           <entry key="project.open.time.0" value="4" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.5" value="1" />
@@ -95,7 +96,7 @@
           <entry key="js" value="15" />
           <entry key="json" value="3" />
           <entry key="md" value="3" />
-          <entry key="php" value="79" />
+          <entry key="php" value="94" />
           <entry key="scss" value="9" />
           <entry key="vue" value="49" />
         </counts>
@@ -106,7 +107,7 @@
           <entry key="JSON" value="3" />
           <entry key="JavaScript" value="15" />
           <entry key="Markdown" value="3" />
-          <entry key="PHP" value="79" />
+          <entry key="PHP" value="94" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="SCSS" value="9" />
           <entry key="Vue.js" value="49" />
@@ -119,7 +120,7 @@
           <entry key="html" value="2" />
           <entry key="js" value="2551" />
           <entry key="md" value="931" />
-          <entry key="php" value="6236" />
+          <entry key="php" value="8541" />
           <entry key="scss" value="235" />
           <entry key="vue" value="6561" />
         </counts>
@@ -129,7 +130,7 @@
           <entry key="HTML" value="2" />
           <entry key="JavaScript" value="2551" />
           <entry key="Markdown" value="931" />
-          <entry key="PHP" value="6236" />
+          <entry key="PHP" value="8541" />
           <entry key="PLAIN_TEXT" value="90" />
           <entry key="SCSS" value="235" />
           <entry key="Vue.js" value="6561" />
@@ -137,7 +138,7 @@
       </usages-collector>
       <usages-collector id="statistics.php.new.class">
         <counts>
-          <entry key="PHP Class.type" value="8" />
+          <entry key="PHP Class.type" value="17" />
         </counts>
       </usages-collector>
     </session>
@@ -145,28 +146,34 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/app/Http/Controllers/Controller.php">
+        <entry file="file://$PROJECT_DIR$/api/app/Http/Controllers/MeetingController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/api/app/Http/Controllers/MemberController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="30" column="8" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
+            <state relative-caret-position="450">
+              <caret line="31" column="32" lean-forward="true" selection-start-line="31" selection-start-column="32" selection-end-line="31" selection-end-column="32" />
+              <folding>
+                <element signature="e#40#86#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/routes/web.php">
+        <entry file="file://$PROJECT_DIR$/api/app/Libs/Helpers/Meeting/MeetingDestroyer.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="42" column="28" selection-start-line="42" selection-start-column="28" selection-end-line="42" selection-end-column="28" />
+            <state>
+              <caret column="1" selection-start-column="1" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/api/app/Libs/Helpers/Meeting/MeetingIndexer.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="64" column="60" lean-forward="true" selection-start-line="64" selection-start-column="60" selection-end-line="64" selection-end-column="60" />
+              <folding>
+                <element signature="e#125#154#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -220,13 +227,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/api/database/migrations/2019_03_09_175819_alter_files_table.php" />
-        <option value="$PROJECT_DIR$/api/database/migrations/2019_03_09_182014_create_file_types_table.php" />
-        <option value="$PROJECT_DIR$/api/database/migrations/2019_03_09_182021_alter_files_table.php" />
-        <option value="$PROJECT_DIR$/api/database/migrations/2019_03_09_172038_create_meeting_user_table.php" />
-        <option value="$PROJECT_DIR$/api/database/migrations/2019_03_09_172017_create_events_table.php" />
-        <option value="$PROJECT_DIR$/api/database/migrations/2019_03_09_172026_create_meetings_table.php" />
-        <option value="$PROJECT_DIR$/api/database/migrations/2019_03_09_172114_create_notifications_table.php" />
         <option value="$PROJECT_DIR$/api/database/migrations/2019_03_09_173424_create_notes_table.php" />
         <option value="$PROJECT_DIR$/api/database/migrations/2019_03_09_173700_create_company_project_table.php" />
         <option value="$PROJECT_DIR$/api/database/migrations/2019_03_09_174011_create_project_user_table.php" />
@@ -238,7 +238,6 @@
         <option value="$PROJECT_DIR$/CHANGELOG.md" />
         <option value="$PROJECT_DIR$/TODO.md" />
         <option value="$PROJECT_DIR$/api/app/Http/Controllers/MeetingsController.php" />
-        <option value="$PROJECT_DIR$/api/app/Libs/Helpers/Meeting/MeetingIndexer.php" />
         <option value="$PROJECT_DIR$/api/app/Libs/Helpers/Indexer/ApiIndexer.php" />
         <option value="$PROJECT_DIR$/api/bootstrap/app.php" />
         <option value="$PROJECT_DIR$/api/app/Http/Controllers/Auth/LoginController.php" />
@@ -268,9 +267,17 @@
         <option value="$PROJECT_DIR$/api/app/Http/Controllers/ProjectController.php" />
         <option value="$PROJECT_DIR$/api/app/Http/Controllers/CompanyController.php" />
         <option value="$PROJECT_DIR$/api/app/Http/Controllers/EventController.php" />
-        <option value="$PROJECT_DIR$/api/app/Http/Controllers/MeetingController.php" />
         <option value="$PROJECT_DIR$/api/app/Http/Controllers/Controller.php" />
+        <option value="$PROJECT_DIR$/api/app/Libs/Indexer/Indexer.php" />
+        <option value="$PROJECT_DIR$/api/app/Libs/Shower/Shower.php" />
+        <option value="$PROJECT_DIR$/api/app/Libs/Storer/Storer.php" />
+        <option value="$PROJECT_DIR$/api/app/Libs/Updater/Updater.php" />
         <option value="$PROJECT_DIR$/api/app/Http/Controllers/MemberController.php" />
+        <option value="$PROJECT_DIR$/api/app/Libs/Helpers/Meeting/MeetingStorer.php" />
+        <option value="$PROJECT_DIR$/api/app/Libs/Helpers/Meeting/MeetingUpdater.php" />
+        <option value="$PROJECT_DIR$/api/app/Libs/Helpers/Meeting/MeetingShower.php" />
+        <option value="$PROJECT_DIR$/api/app/Http/Controllers/MeetingController.php" />
+        <option value="$PROJECT_DIR$/api/app/Libs/Helpers/Meeting/MeetingIndexer.php" />
       </list>
     </option>
   </component>
@@ -496,6 +503,30 @@
               <item name="akai-manager" type="b2602c69:ProjectViewProjectNode" />
               <item name="akai-manager" type="462c0819:PsiDirectoryNode" />
               <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Libs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="akai-manager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="akai-manager" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Libs" type="462c0819:PsiDirectoryNode" />
+              <item name="Helpers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="akai-manager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="akai-manager" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Libs" type="462c0819:PsiDirectoryNode" />
+              <item name="Helpers" type="462c0819:PsiDirectoryNode" />
+              <item name="Meeting" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="akai-manager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="akai-manager" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
               <item name="database" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -570,18 +601,18 @@
       <workItem from="1552421541719" duration="533000" />
       <workItem from="1552422853353" duration="18018000" />
       <workItem from="1552472018062" duration="7816000" />
-      <workItem from="1552500358940" duration="424000" />
+      <workItem from="1552500358940" duration="3357000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58814000" />
+    <option name="totallyTimeSpent" value="61747000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="960" y="-29" width="960" height="1109" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.4989059" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.34901533" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -630,64 +661,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/api/app/Http/Middleware/ExampleMiddleware.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/app/Http/Middleware/Authenticate.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CHANGELOG.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor>
-            <caret column="11" selection-start-column="11" selection-end-column="11" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TODO.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="255">
-            <caret line="17" column="31" lean-forward="true" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="9" lean-forward="true" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/vendor/laravel/lumen-framework/config/services.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="51" lean-forward="true" selection-start-line="25" selection-start-column="51" selection-end-line="25" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/app/Http/Middleware/Cors.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="32" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/app/Console/Kernel.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/api/public/index.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -698,7 +671,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/app/Libs/Helpers/Meeting/MeetingIndexer.php" />
     <entry file="file://$PROJECT_DIR$/api/app/Libs/Helpers/Indexer/Responder.php" />
     <entry file="file://$PROJECT_DIR$/api/app/Libs/Helpers/Indexer/ApiIndexer.php" />
     <entry file="file://$PROJECT_DIR$/api/app/Providers/AuthServiceProvider.php">
@@ -881,13 +853,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/app/Http/Controllers/MeetingController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api/app/Http/Controllers/DashboardController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -926,6 +891,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/api/app/Libs/Updater/Updater.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/app/Libs/Storer/Storer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/app/Libs/Shower/Shower.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/app/Libs/Indexer/Indexer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/api/routes/web.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="495">
@@ -933,10 +926,65 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/api/database/migrations/2019_03_09_172026_create_meetings_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="20" column="35" lean-forward="true" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/app/Libs/Helpers/Meeting/MeetingStorer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/app/Libs/Helpers/Meeting/MeetingUpdater.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="13" column="36" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/app/Libs/Helpers/Meeting/MeetingShower.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="13" column="34" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/api/app/Http/Controllers/MemberController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="30" column="8" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
+        <state relative-caret-position="120">
+          <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="27" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/app/Libs/Helpers/Meeting/MeetingDestroyer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="1" selection-start-column="1" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/app/Http/Controllers/MeetingController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="31" column="32" lean-forward="true" selection-start-line="31" selection-start-column="32" selection-end-line="31" selection-end-column="32" />
+          <folding>
+            <element signature="e#40#86#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/app/Libs/Helpers/Meeting/MeetingIndexer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="64" column="60" lean-forward="true" selection-start-line="64" selection-start-column="60" selection-end-line="64" selection-end-column="60" />
+          <folding>
+            <element signature="e#125#154#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
