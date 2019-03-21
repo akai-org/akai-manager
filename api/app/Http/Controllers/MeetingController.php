@@ -7,6 +7,7 @@ use App\Libs\Helpers\Meeting\MeetingIndexer;
 use App\Libs\Helpers\Meeting\MeetingShower;
 use App\Libs\Helpers\Meeting\MeetingStorer;
 use App\Libs\Helpers\Meeting\MeetingUpdater;
+use App\Libs\Responder\Responder;
 use Illuminate\Http\Request;
 
 class MeetingController extends Controller
@@ -43,13 +44,21 @@ class MeetingController extends Controller
     public function store(Request $request)
     {
         $storer = new MeetingStorer($request);
-        return $storer->createAndRespond();
+        $storer->createObject();
+
+        return Responder::response([
+            'message' => 'Pomyślnie utworzono nowe spotkanie'
+        ]);
     }
 
     public function update(Request $request, int $id)
     {
         $updater = new MeetingUpdater($request, $id);
-        return $updater->upadteAndRespond();
+        $updater->updateObject();
+
+        return Responder::response([
+            'message' => 'Pomyślnie edytowano szczegóły spotkania'
+        ]);
     }
 
     public function destroy(int $id)

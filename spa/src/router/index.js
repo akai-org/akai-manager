@@ -7,6 +7,7 @@ import Meetings from '../components/sites/Meetings'
 import Companies from '../components/sites/Companies'
 import Events from '../components/sites/Events'
 import Login from '../components/sites/Login'
+import MeetingCreate from "../components/sites/MeetingCreate"
 
 Vue.use(Router)
 
@@ -35,6 +36,12 @@ export default new Router({
           name: 'Meetings',
           meta: {layout: "dashboard"},
           component: Meetings
+      },
+      {
+          path: '/meetings/create',
+          name: 'MeetingCreate',
+          meta: {layout: "dashboard"},
+          component: MeetingCreate
       },
       {
           path: '/companies',

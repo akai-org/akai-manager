@@ -17,8 +17,9 @@ class CreateMeetingsTable extends Migration
             $table->bigIncrements('id');
             $table->dateTime('starts_at');
             $table->dateTime('ends_at');
-            $table->boolean('reportable');
-            $table->string('code');
+            $table->string('place');
+            $table->boolean('reportable')->default(0);
+            $table->string('code')->nullable();
         });
     }
 

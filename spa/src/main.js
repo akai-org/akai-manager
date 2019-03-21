@@ -9,12 +9,18 @@ import 'bootstrap'
 import './sass/vendors/sbadmin/sb-admin-2.scss'
 import './sass/custom/style.scss'
 import '../node_modules/@fortawesome/fontawesome-free/css/all.css'
-
-window.axios = axios;
-Vue.config.productionTip = false;
-
 import DashboardLayout from './components/layouts/DashboardLayout';
 import LoginLayout from './components/layouts/LoginLayout';
+import moment from 'moment';
+
+window.moment = moment;
+window.axios = axios;
+Vue.config.productionTip = false;
+window.mainApiInstance = axios.create({
+    baseURL: 'http://vuespa.test/api/public',
+    timeout: 1000,
+    // headers: {'X-Custom-Header': 'foobar'}
+});
 
 Vue.component("dashboard-layout", DashboardLayout);
 Vue.component("login-layout", LoginLayout);
