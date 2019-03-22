@@ -1,6 +1,6 @@
 # Changelog
 
-## [0.1.0] - 2019.03.21
+## [unreleased]
 ### Added
 #### Lumen API:
 - basic database migrations, 

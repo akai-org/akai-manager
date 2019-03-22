@@ -30,11 +30,6 @@
                             <option value="100">100</option>
                         </select></label></div>
                     </div>
-                    <div class="col-sm-12 col-md-6">
-                        <div id="dataTable_filter" class="dataTables_filter"><label>Search:<input
-                                type="search" class="form-control form-control-sm" placeholder=""
-                                aria-controls="dataTable"></label></div>
-                    </div>
                 </div>
                 <div class="row">
                     <div class="col-sm-12">
@@ -77,20 +72,21 @@
                                 <td>{{meeting.starts_at}}</td>
                                 <td>{{meeting.ends_at}}</td>
                                 <td>{{meeting.status}}</td>
-                                <td></td>
+                                <td class="text-right">
+                                    <a href="#" @click="goToEdit(meeting.id)">
+                                        <i class="fas fa-pen mx-1"></i>
+                                    </a>
+                                    <a href="#" @click="prompDelete(meeting.id)">
+                                        <i class="fas fa-trash mx-1 text-danger"></i>
+                                    </a>
+                                </td>
                             </tr>
                             </tbody>
                         </table>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-sm-12 col-md-5">
-                        <div class="dataTables_info" id="dataTable_info" role="status" aria-live="polite">
-
-                            Showing 1 to 10 of 57 entries
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-md-7">
+                    <div class="col-sm-12 col-md-7 offset-md-5">
                         <div class="dataTables_paginate paging_simple_numbers" id="dataTable_paginate">
                             <ul class="pagination">
                                 <li class="paginate_button page-item previous"
@@ -157,6 +153,12 @@
             gotoNextPage(e) {
                 e.preventDefault();
                 this.currentPage = this.paginationData.next_page
+            },
+            goToEdit(id) {
+
+            },
+            promptDelete(id) {
+
             },
             isThereNextPage() {
                 return !isNaN(this.paginationData.next_page);
