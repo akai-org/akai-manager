@@ -16,7 +16,7 @@ abstract class Indexer
     protected $pagination;
     protected $successMessage;
     protected $dataArrayName;
-    private $results;
+    protected $results;
     private $resultsCount;
 
     public function __construct(Request $request)
@@ -64,7 +64,7 @@ abstract class Indexer
         $this->query->orderBy($this->tableName . "." . $this->order['by'], $this->order['way']);
     }
 
-    private function executeBeforeObtainingResults()
+    protected function executeBeforeObtainingResults()
     {
 
     }
@@ -89,7 +89,7 @@ abstract class Indexer
         $this->resultsCount = $this->query->get()->count();
     }
 
-    private function executeAfterObtainingResults()
+    protected function executeAfterObtainingResults()
     {
 
     }
