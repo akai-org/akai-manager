@@ -1,5 +1,6 @@
 // The Vue build version to load with the `import` command
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
+/*eslint-disable*/
 import Vue from 'vue'
 import App from './App'
 import router from './router'
@@ -12,7 +13,9 @@ import '../node_modules/@fortawesome/fontawesome-free/css/all.css'
 import DashboardLayout from './components/layouts/DashboardLayout';
 import LoginLayout from './components/layouts/LoginLayout';
 import moment from 'moment';
+import chart from 'tui-chart';
 
+window.chart = chart;
 window.moment = moment;
 window.axios = axios;
 Vue.config.productionTip = false;

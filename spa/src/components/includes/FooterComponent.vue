@@ -3,7 +3,7 @@
     <footer class="sticky-footer bg-white">
         <div class="container my-auto">
             <div class="copyright text-center my-auto">
-                <span>Dawid Dziedzic @ AKAI, 2019</span>
+                <span>AKAI, 2019</span>
             </div>
         </div>
     </footer>
@@ -11,6 +11,7 @@
 </template>
 
 <script>
+/*eslint-disable*/
     export default {
         name: "FooterComponent"
     }

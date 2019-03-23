@@ -1,5 +1,5 @@
 <template>
-    <div class="events">
+    <div class="meetings">
         <!-- Page Heading -->
         <div class="d-flex">
             <div>
@@ -68,7 +68,11 @@
                             <tbody>
                             <tr role="row" class="odd" v-for="meeting in meetings">
                                 <td class="sorting_1">{{meeting.id}}</td>
-                                <td>{{meeting.place}}</td>
+                                <td>
+                                    <a href="#" @click="goToDetails(meeting.id)">
+                                        {{meeting.place}}
+                                    </a>
+                                </td>
                                 <td>{{meeting.starts_at}}</td>
                                 <td>{{meeting.ends_at}}</td>
                                 <td>{{meeting.status}}</td>
@@ -114,6 +118,7 @@
 </template>
 
 <script>
+/*eslint-disable*/
     export default {
         name: "Meetings",
         data() {
@@ -159,6 +164,9 @@
             },
             promptDelete(id) {
 
+            },
+            goToDetails(id) {
+                this.$router.push(`/meetings/${id}`);
             },
             isThereNextPage() {
                 return !isNaN(this.paginationData.next_page);

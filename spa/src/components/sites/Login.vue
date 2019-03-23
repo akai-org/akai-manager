@@ -5,6 +5,7 @@
 </template>
 
 <script>
+/*eslint-disable*/
     import cookieHelper from '../../libs/cookieHelper';
     export default {
         name: "Login",

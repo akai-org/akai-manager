@@ -1,13 +1,15 @@
+/*eslint-disable*/
 import Vue from 'vue'
 import Router from 'vue-router'
 import Dashboard from '../components/sites/Dashboard'
-import Members from '../components/sites/Members'
-import Projects from '../components/sites/Projects'
-import Meetings from '../components/sites/Meetings'
-import Companies from '../components/sites/Companies'
-import Events from '../components/sites/Events'
+import Members from '../components/sites/Members/Members'
+import Projects from '../components/sites/Projects/Projects'
+import Meetings from '../components/sites/Meetings/Meetings'
+import Companies from '../components/sites/Companies/Companies'
+import Events from '../components/sites/Events/Events'
 import Login from '../components/sites/Login'
-import MeetingCreate from "../components/sites/MeetingCreate"
+import MeetingCreate from '../components/sites/Meetings/MeetingCreate'
+import MeetingShow from '../components/sites/Meetings/MeetingShow';
 
 Vue.use(Router)
 
@@ -42,6 +44,13 @@ export default new Router({
           name: 'MeetingCreate',
           meta: {layout: "dashboard"},
           component: MeetingCreate
+      },
+      {
+          path: '/meetings/:id',
+          name: 'MeetingShow',
+          meta: {layout: "dashboard"},
+          component: MeetingShow,
+          props: true
       },
       {
           path: '/companies',
