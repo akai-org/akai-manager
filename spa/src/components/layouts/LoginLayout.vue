@@ -4,6 +4,7 @@
     </div>
 </template>
 <script>
+    /*eslint-disable*/
     import SidebarComponent from '../includes/SidebarComponent';
     export default {
         name: "LoginLayout",

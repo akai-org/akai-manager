@@ -13,6 +13,8 @@
 
 $router->get('/dashboard', 'DashboardController');
 
+$router->post('/auth/google/verify', 'AuthController@verifyGoogleLogin');
+
 $router->get('/members', 'MemberController@index');
 $router->get('/members/{id}', 'MemberController@show');
 $router->post('/members', 'MemberController@store');

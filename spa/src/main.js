@@ -39,9 +39,19 @@ window.vm = new Vue({
 
 window.onSignIn = function (googleUser) {
     window.googleUser = googleUser;
-    cookieHelper.setCookie("loggedIn", true, 1);
+    window.mainApiInstance.request({
+        url: '/auth/google/verify',
+        method: 'POST',
+        data: {
+            token_id: googleUser.getAuthResponse().id_token
+        }
+    }).then(response => {
+        console.log(response);
+    }).catch(error => {
+        console.log(error);
+    });
     vm.$refs.app.setGoogleUser(googleUser);
-    if(vm.$router.currentRoute.meta.layout !== "dashboard"){
-        vm.$router.push("/");
-    }
+    // if(vm.$router.currentRoute.meta.layout !== "dashboard"){
+    //     vm.$router.push("/");
+    // }
 };
