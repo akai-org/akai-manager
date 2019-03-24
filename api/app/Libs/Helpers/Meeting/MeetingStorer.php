@@ -35,9 +35,7 @@ class MeetingStorer extends Storer
     {
         $agenda = $this->request->input('agenda');
         if(isset($agenda) && !empty($agenda)) {
-            $iteration = 1;
-            $parsedAgendaData = array_map(function($item) use ($iteration){
-                $item['order'] = $iteration++;
+            $parsedAgendaData = array_map(function($item){
                 $item['meeting_id'] = $this->id;
                 return $item;
             }, $agenda);

@@ -5,16 +5,16 @@
             <table>
                 <tr class="d-flex">
                     <th class="p-2 px-3 bg-dark text-white rounded">{{key+1}}</th>
-                    <th class="w-25 p-2 pl-4 d-flex">
-                        <input type="text" v-model="point.title" class="border-0" :name="'agenda['+key+'][title]'">
+                    <th class="p-2 pl-4 d-flex">
+                        <input type="text" v-model="point.title" class="border-0">
                     </th>
                     <td class="w-75">
-                        <textarea class="border-0 w-100" v-model="point.content" :name="'agenda['+key+'][content]'"></textarea>
+                        <textarea class="border-0 w-100" v-model="point.content"></textarea>
                     </td>
                     <td class="ml-auto">
                         <div class="options-sack p-1">
-                            <div class="option danger ml-auto small">
-                                <i class="fas fa-times" @click="deletePoint(key)"></i>
+                            <div class="option danger ml-auto small" @click="deletePoint(key)">
+                                <i class="fas fa-times"></i>
                             </div>
                         </div>
                     </td>
@@ -22,8 +22,8 @@
             </table>
         </div>
         <div class="options-sack border-top">
-            <div class="option success ml-auto">
-                <i class="fas fa-plus" @click="addPoint"></i>
+            <div class="option success ml-auto" @click="addPoint">
+                <i class="fas fa-plus"></i>
             </div>
         </div>
     </div>
@@ -54,13 +54,16 @@
             },
             addPoint() {
                 let newPoint = {
-                    title: "Tytuł",
-                    content: "Treść"
+                    title: "",
+                    content: "",
+                    order:this.currentPoints.length + 1
                 };
                 this.agendaPoints.push(newPoint)
-            },
-            submitAgendaPoints() {
-
+            }
+        },
+        watch: {
+            agendaPoints() {
+                this.$emit("dataChanged", this.currentPoints);
             }
         }
     }

@@ -66,7 +66,7 @@
                         </a>
                         <div class="collapse show" id="agendaCardCollapse">
                             <div class="card-body">
-                                <meeting-agenda-editor></meeting-agenda-editor>
+                                <meeting-agenda-editor @dataChanged="setAgendaData"></meeting-agenda-editor>
                             </div>
                         </div>
                     </div>
@@ -80,7 +80,7 @@
 </template>
 
 <script>
-    /*eslint-disable*/
+/*eslint-disable*/
     import MeetingAgendaEditor from '../../tools/MeetingAgendaEditor';
     export default {
         name: "MeetingCreate",
@@ -92,24 +92,30 @@
                 meetingsStoreRoute: 'meetings',
                 startsAt: null,
                 place: null,
-                duration: null
+                duration: null,
+                agenda: null
             }
         },
         methods: {
-            createMeeting: function () {
+            createMeeting: function (e) {
+                e.preventDefault();
                 window.mainApiInstance.request({
                     url: '/meetings',
                     method: 'POST',
                     data: {
                         place: this.place,
                         starts_at: this.startsAt,
-                        ends_at: this.endTimeForRequest
+                        ends_at: this.endTimeForRequest,
+                        agenda: this.agenda
                     }
                 }).then(response => {
                     this.$parent.dumpSuccess(response.data.message)
                 }).catch(error => {
                     this.$parent.dumpErrors(error.response.data.error.errors)
                 })
+            },
+            setAgendaData: function(data) {
+                this.agenda = data;
             }
         },
         computed: {
