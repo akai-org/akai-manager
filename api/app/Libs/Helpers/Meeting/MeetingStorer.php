@@ -12,6 +12,7 @@ class MeetingStorer extends Storer
     protected $valuesToInsert = [
         'place', 'starts_at', 'ends_at'
     ];
+    protected $id;
 
     protected function preCreateProcess()
     {
@@ -21,12 +22,26 @@ class MeetingStorer extends Storer
 
     protected function postCreateProcess()
     {
-
+        $this->getAndSaveAgenda();
     }
 
     private function validateRequestData()
     {
         $validator = new MeetingStoreValidator($this->valuesToInsert);
         $validator->validateRequest();
+    }
+
+    private function getAndSaveAgenda()
+    {
+        $agenda = $this->request->input('agenda');
+        if(isset($agenda) && !empty($agenda)) {
+            $iteration = 1;
+            $parsedAgendaData = array_map(function($item) use ($iteration){
+                $item['order'] = $iteration++;
+                $item['meeting_id'] = $this->id;
+                return $item;
+            }, $agenda);
+            app('db')->table('meeting_agenda')->insert($parsedAgendaData);
+        }
     }
 }

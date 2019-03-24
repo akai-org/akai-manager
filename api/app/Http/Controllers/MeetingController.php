@@ -37,7 +37,7 @@ class MeetingController extends Controller
     public function show(int $id)
     {
         $shower = new MeetingShower($id);
-        $shower->processRequest();
+        $shower->createResponse();
         return $shower->response;
     }
 

@@ -29,7 +29,8 @@
                                 </div>
                                 <div class="col-lg-6 mb-3">
                                     <label for="starts_at">Data i godzina spotkania</label>
-                                    <input type="datetime-local" class="form-control" id="starts_at" required v-model="startsAt">
+                                    <input type="datetime-local" class="form-control" id="starts_at" required
+                                           v-model="startsAt">
                                     <div class="invalid-feedback">
                                         Podanie czasu spotkania jest wymagane.
                                     </div>
@@ -37,9 +38,11 @@
                                 <div class="col-lg-6 mb-3">
                                     <label for="duration">Czas trwania</label>
                                     <div class="input-group">
-                                        <input type="number" class="form-control" id="duration" placeholder="90" required v-model="duration">
+                                        <input type="number" class="form-control" id="duration" placeholder="90"
+                                               required v-model="duration">
                                         <div class="input-group-append">
-                                            <span class="input-group-text">min <small class="mx-1">({{endTimeForView}})</small></span>
+                                            <span class="input-group-text">min <small
+                                                    class="mx-1">({{endTimeForView}})</small></span>
                                         </div>
                                         <div class="invalid-feedback" style="width: 100%;">
                                             Your username is required.
@@ -63,7 +66,7 @@
                         </a>
                         <div class="collapse show" id="agendaCardCollapse">
                             <div class="card-body">
-                                Tutaj możesz rozplanować przebieg spotkania poprzez dodanie kolejnych punktów do agendy
+                                <meeting-agenda-editor></meeting-agenda-editor>
                             </div>
                         </div>
                     </div>
@@ -77,9 +80,13 @@
 </template>
 
 <script>
-/*eslint-disable*/
+    /*eslint-disable*/
+    import MeetingAgendaEditor from '../../tools/MeetingAgendaEditor';
     export default {
         name: "MeetingCreate",
+        components: {
+            MeetingAgendaEditor
+        },
         data() {
             return {
                 meetingsStoreRoute: 'meetings',
@@ -106,13 +113,13 @@
             }
         },
         computed: {
-            endTimeForRequest: function() {
-                if(this.duration != null && this.startsAt != null){
+            endTimeForRequest: function () {
+                if (this.duration != null && this.startsAt != null) {
                     return moment(this.startsAt).add(this.duration, 'm').format("YYYY-MM-DDTHH:mm")
                 }
             },
             endTimeForView: function () {
-                if(this.duration != null && this.startsAt != null){
+                if (this.duration != null && this.startsAt != null) {
                     return moment(this.startsAt).add(this.duration, 'm').format("HH:mm")
                 }
             }

@@ -69,7 +69,7 @@
                             <tr role="row" class="odd" v-for="meeting in meetings">
                                 <td class="sorting_1">{{meeting.id}}</td>
                                 <td>
-                                    <a href="#" @click="goToDetails(meeting.id)">
+                                    <a href="#" @click="goToDetails($event, meeting.id)">
                                         {{meeting.place}}
                                     </a>
                                 </td>
@@ -165,7 +165,8 @@
             promptDelete(id) {
 
             },
-            goToDetails(id) {
+            goToDetails(e, id) {
+                e.preventDefault();
                 this.$router.push(`/meetings/${id}`);
             },
             isThereNextPage() {

@@ -1,0 +1,30 @@
+.options-sack {
+  display: flex;
+  padding: 1em;
+  .option {
+    border-radius: 15px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    &.small{
+      width: 20px;
+      height: 20px;
+      border-radius: 10px;
+      font-size: 0.75em;
+    }
+    &.long{
+      width: 60px;
+    }
+    &.success{
+      background-color: $success;
+      color: white;
+    }
+    &.danger {
+      background-color: $danger;
+      color: white;
+    }
+  }
+}

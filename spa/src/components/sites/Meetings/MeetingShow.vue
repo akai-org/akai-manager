@@ -2,7 +2,7 @@
     <div class="meeting-show" v-if="meeting">
         <!-- Page Heading -->
         <h1 class="h3 mb-2 text-gray-800">Spotkanie {{meeting.starts_at}}</h1>
-        <p class="mb-4">Szczegóły dotyczące spotkania dnia ... w ...</p>
+        <p class="mb-4">Szczegóły dotyczące spotkania dnia {{meeting.starts_at}} w {{meeting.place}}</p>
 
         <!-- Content Row -->
         <div class="row">
@@ -31,30 +31,10 @@
                                 <th>temat</th>
                                 <th>opis</th>
                             </tr>
-                            <tr>
-                                <td>1</td>
-                                <td>...</td>
-                                <td>...</td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>...</td>
-                                <td>...</td>
-                            </tr>
-                            <tr>
-                                <td>3</td>
-                                <td>...</td>
-                                <td>...</td>
-                            </tr>
-                            <tr>
-                                <td>4</td>
-                                <td>...</td>
-                                <td>...</td>
-                            </tr>
-                            <tr>
-                                <td>5</td>
-                                <td>...</td>
-                                <td>...</td>
+                            <tr v-for="point in meeting.agenda">
+                                <td>{{point.order}}</td>
+                                <td>{{point.title}}</td>
+                                <td>{{point.content}}</td>
                             </tr>
                         </table>
                     </div>
@@ -168,15 +148,22 @@
         data() {
             return {
                 meeting: null,
-                uri: '/meetings'
+                uri: '/meetings/' + this.id,
+                loading: true,
+                incoming: false,
+                started: false
             }
         },
         methods: {
             displayIncoming() {
-
+                this.incoming = true;
+                this.loading = false;
             },
             displayStarted() {
-                this.setFrequencyChart()
+                this.started = true;
+                this.loading = false;
+                this.setAgenda();
+                this.setFrequencyChart();
             },
             seedFrequencyChart() {
                 var container = this.$refs.frequencyChart;
@@ -216,9 +203,8 @@
             }
         },
         mounted() {
-            let readyRequestUri = this.uri + '/' + this.id;
             window.mainApiInstance.request({
-                url: readyRequestUri,
+                url: this.uri,
                 method: 'GET',
             }).then(response => {
                 this.meeting = response.data.data.meeting;

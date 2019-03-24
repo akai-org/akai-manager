@@ -17,6 +17,7 @@ abstract class Storer
     protected $tableName;
     protected $valuesToInsert = [];
     protected $requestParseData;
+    protected $id;
 
     public function __construct(Request $request)
     {
@@ -26,17 +27,17 @@ abstract class Storer
     public function createObject()
     {
         $this->preCreateProcess();
-        $this->createProcess();
+        $this->insertAndGetId();
         $this->postCreateProcess();
     }
 
-    protected function createProcess()
+    protected function insertAndGetId()
     {
         $values = [];
         foreach($this->valuesToInsert as $key => $value) {
             $values[$key] = $value;
         }
-        app('db')->table($this->tableName)->insert($values);
+        $this->id = app('db')->table($this->tableName)->insertGetId($values);
     }
 
     /**
